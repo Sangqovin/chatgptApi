@@ -1,0 +1,5 @@
+flask
+flask_cors
+browser_cookie3
+aiohttp
+curl_cffi

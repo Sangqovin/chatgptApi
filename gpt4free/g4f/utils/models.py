@@ -48,7 +48,7 @@ default = Model(
         Bing,         # Not fully GPT 3 or 4
         Yqcloud,      # Answers short questions in chinese
         ChatgptDuo,   # Include search results
-        Aibn, Aichat, ChatgptAi, ChatgptLogin, FreeGpt, GptGo, Myshell, Ylokh, GeekGpt
+        Aibn, Aichat, ChatgptAi, ChatgptLogin, FreeGpt, GptGo, Myshell, Ylokh, 
     ])
 )
 
@@ -250,42 +250,74 @@ gpt_4_32k_0613 = Model(
 text_ada_001 = Model(
     name          = 'text-ada-001',
     base_provider = 'openai',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 text_babbage_001 = Model(
     name          = 'text-babbage-001',
     base_provider = 'openai',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 text_curie_001 = Model(
     name          = 'text-curie-001',
     base_provider = 'openai',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 text_davinci_002 = Model(
     name          = 'text-davinci-002',
     base_provider = 'openai',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 text_davinci_003 = Model(
     name          = 'text-davinci-003',
     base_provider = 'openai',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 llama13b_v2_chat = Model(
     name          = 'replicate:a16z-infra/llama13b-v2-chat',
     base_provider = 'replicate',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 llama7b_v2_chat = Model(
     name          = 'replicate:a16z-infra/llama7b-v2-chat',
     base_provider = 'replicate',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 llama70b_v2_chat = Model(
     name          = 'replicate/llama70b-v2-chat',
     base_provider = 'replicate',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 
 class ModelUtils:

@@ -58,8 +58,8 @@ gpt_35_long = Model(
     base_provider = 'openai',
     best_provider = RetryProvider([
         AiAsk, Aichat, ChatgptDemo, FreeGpt, Liaobots, You,
-        GPTalk, ChatgptLogin, GptChatly, GptForLove, Opchatgpts,
-        NoowAi, GeekGpt, Phind
+        GPTalk, ChatgptLogin, GptChatly, Opchatgpts,
+        NoowAi, Phind
     ])
 )
 
@@ -69,7 +69,7 @@ gpt_35_turbo = Model(
     base_provider = 'openai',
     best_provider=RetryProvider([
         ChatgptX, ChatgptDemo, GptGo, You, 
-        NoowAi, GPTalk, GptForLove, Phind, ChatBase, Cromicle
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
     ])
 )
 
@@ -77,7 +77,7 @@ gpt_4 = Model(
     name          = 'gpt-4',
     base_provider = 'openai',
     best_provider = RetryProvider([
-        Bing, GeekGpt, Liaobots, Phind
+        Bing, Liaobots, Phind
     ])
 )
 
@@ -107,62 +107,110 @@ llama_13b = Model(
 claude_instant_v1 = Model(
     name          = 'claude-instant-v1',
     base_provider = 'anthropic',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 claude_v1 = Model(
     name          = 'claude-v1',
     base_provider = 'anthropic',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 claude_v2 = Model(
     name          = 'claude-v2',
     base_provider = 'anthropic',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 command_light_nightly = Model(
     name          = 'command-light-nightly',
     base_provider = 'cohere',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 command_nightly = Model(
     name          = 'command-nightly',
     base_provider = 'cohere',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 gpt_neox_20b = Model(
     name          = 'EleutherAI/gpt-neox-20b',
     base_provider = 'huggingface',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 oasst_sft_1_pythia_12b = Model(
     name          = 'OpenAssistant/oasst-sft-1-pythia-12b',
     base_provider = 'huggingface',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 oasst_sft_4_pythia_12b_epoch_35 = Model(
     name          = 'OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5',
     base_provider = 'huggingface',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 santacoder = Model(
     name          = 'bigcode/santacoder',
     base_provider = 'huggingface',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 bloom = Model(
     name          = 'bigscience/bloom',
     base_provider = 'huggingface',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 flan_t5_xxl = Model(
     name          = 'google/flan-t5-xxl',
     base_provider = 'huggingface',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 code_davinci_002 = Model(
     name          = 'code-davinci-002',
     base_provider = 'openai',
-    best_provider = Vercel)
+    best_provider=RetryProvider([
+        ChatgptX, ChatgptDemo, GptGo, You, 
+        NoowAi, GPTalk, Phind, ChatBase, Cromicle
+    ])
+)
 
 gpt_35_turbo_16k = Model(
     name          = 'gpt-3.5-turbo-16k',
